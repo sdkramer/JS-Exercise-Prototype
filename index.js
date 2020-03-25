@@ -92,7 +92,7 @@ function Baby(babyAttributes) {
   Person.call(this, babyAttributes);
 }
 
-
+Baby.prototype = Object.create(Person.prototype);
 
 Baby.prototype.play = function(favoriteToy){
   return `Playing with ${favoriteToy}`;
