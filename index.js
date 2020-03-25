@@ -44,14 +44,14 @@ function Person(name,age) {
     this.age = age;
     this.stomach = [];
 }
-Person.prototype.eat = (someFood) => {
-  if (stomach.length <= 10) {
-  stomach.push(someFood);
-}
+Person.prototype.eat = function(someFood) {
+  if (this.stomach.length < 10) {
+  return this.stomach.push(someFood);
+};
 }
 
-Person.prototype.poop =() => {
-    stomach.forEach.pop();
+Person.prototype.poop = function() {
+    this.stomach.length = 0;
 }
 
 Person.prototype.toString = (name, age) => {
