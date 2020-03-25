@@ -102,10 +102,10 @@ Baby.prototype.play = function(favoriteToy){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window/Global Object Binding: In general, "this" refers to, or binds to, the object in which it is executed. So if used in the global scope, "this" binds to the global object, which is all the given properties and methods of JavaScript.
+  2. Implicit Binding: Here "this" binds to the object in which it is called, namely, the object named before the "." in the invocation.
+  3. Explicit Binding: When we call or apply a constructor function, we also explicitly define "this".
+  4. New Binding: When we call a constructor function using the "new" keyword, this creates a new binding of "this" to the new object.
 */
 
 
